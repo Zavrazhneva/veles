@@ -1,0 +1,13 @@
+.header {
+    margin: 47px 0;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+}

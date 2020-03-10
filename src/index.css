@@ -1,0 +1,22 @@
+body {
+  margin: auto auto;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1174px;
+}
+h2{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}

@@ -1,0 +1,30 @@
+.wrapper {
+    background-color: rgba(196, 196, 196, 0.3) ;
+}
+.offer {
+    padding: 62px 0 48px 0;
+    background-image: url(../images/offer-img.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    background-color: #FF7931;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 15px;
+}
+.slider {
+
+}
+.title {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    color: #fff;
+    margin: 44px 0;
+}
