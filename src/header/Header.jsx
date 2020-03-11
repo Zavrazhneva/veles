@@ -11,8 +11,8 @@ export class Footer extends React.Component {
         'Архитектура','Кино','Театр',
         'Литература','Религия','Живопись'];
         const listItems = NavigationList.map((number) =>
-  <li className={S.item}><a href="#">{number}</a></li>
-);
+        <li className={S.item}><a href="#">{number}</a></li>
+        );
     return (<ul className={S.list}>{listItems}</ul>)
     }
     

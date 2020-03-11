@@ -2,3 +2,7 @@
   font-size: 35px;
   line-height: 47px;
 }
+.content {
+  display: flex;
+  justify-content: space-between;
+}

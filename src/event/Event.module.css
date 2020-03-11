@@ -1,0 +1,45 @@
+.event {
+    display: flex;
+    width: 370px;
+    min-height: 479px;
+   
+}
+
+.images {
+    width: 370px;
+}
+.title {
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.button {
+    background-color: #FF7931;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 17px 30px;
+    width: 170px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-image: url(../images/Arrow\ forward.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.buttonDark {
+    background-color: rgba(0, 0, 0, 0.7);
+    border:2px solid #FF7931;
+    display: inline-block;
+
+}
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
