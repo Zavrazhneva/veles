@@ -13,6 +13,9 @@
     font-size: 30px;
     margin-top: 40px;
 }
+.titleWhite {
+    color: #fff;
+}
 .button {
     background-color: #FF7931;
     display: inline-block;

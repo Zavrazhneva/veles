@@ -2,7 +2,7 @@ import React from 'react';
 import {Footer} from '../header/Header';
 import {Offer} from '../offer/Offer';
 import {Event} from '../event/Event';
-import {News} from '../news/News';
+import {News, TopNews} from '../news/News';
 import S from './App.module.css'
 
 const NavigationList = [
@@ -10,38 +10,42 @@ const NavigationList = [
       title: "Воздушные шары",
       link: "https://spb.poletynashare.ru/",
       images: require('../images/drew-colins.jpg'),
+      contrast: false
   },
   {
       title: "Необычная фотосессия",
       link: "https://www.mindo.ru/ptichki",
       images: require('../images/jeremy-bishop.jpg'),
+      contrast: true
   },
   {
       title: "Выставка птиц",
       link: "https://www.mindo.ru/ptichki",
-      images: require('../images/bogdan-pasca.jpg')
+      images: require('../images/bogdan-pasca.jpg'),
+      contrast: true
   }
   ];
 
+ 
   const NewsList = [
-    {
-        title: 'Открытие нового памятника Евгению Леонову',
-        descript: '10 сентября в 15:00 был открыт памятник писателю',
-        images: require('../images/news-photo.jpg')
-
-    },
     {
         title: 'Беседы с писателями',
         descript: 'Русские писатели говорят о важности искусства',
-        images: require('../images/news-photo.jpg')
+        images: require('../images/news-photo2.jpg')
 
     },
     {
         title: 'День и ночь св. Патрика: встреча старых друзей',
         descript: 'Не Джойсом единым живет Ирландия!',
-        images: require('../images/news-photo.jpg')
+        images: require('../images/news-photo3.jpg')
 
-    }
+    },
+    {
+      title: 'День и ночь св. Патрика: встреча старых друзей',
+      descript: 'Не Джойсом единым живет Ирландия!',
+      images: require('../images/news-photo4.jpg')
+
+  }
 ]
 export class App extends React.Component {
   
@@ -51,14 +55,22 @@ export class App extends React.Component {
         <h2 className={S.title}>Новости культуры</h2>
         <Footer/>
         <Offer/>
-        <div className={S.content}>
-          <div>{NewsList.map((item) => <News {...item}/>)}</div>
-          <div>
-            {NavigationList.map((number) => <Event {...number}/>)}
+        <div className={S.contentWrapper}>
+          <h3 className={S.titleBlocks}>Новости</h3>
+          <div className={S.content}>
+            <div className={S.contentLeft}>
+              <div className={S.news}>
+                <TopNews/>
+                <div>{NewsList.map((item) => <News {...item}/>)}</div>
+              </div>
+              
+            </div>
+            <div className={S.contentRight}>
+              {NavigationList.map((number) => <Event {...number}/>)}
+            </div>  
           </div>
-          
-          
         </div>
+        
         
       </div>
       )

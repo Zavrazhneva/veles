@@ -2,7 +2,20 @@
   font-size: 35px;
   line-height: 47px;
 }
+.contentWrapper {
+  margin: 99px 0;
+}
 .content {
   display: flex;
   justify-content: space-between;
+}
+.titleBlocks{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.news {
+  display: flex;
 }
