@@ -7,7 +7,7 @@ export class Overviews extends React.Component {
         return (
             <div className={S.overview}>
                 <img className={S.images} src={this.props.images} alt=""/>
-                <a href={this.props.link} className={S.title}>{this.props.title}}</a>
+                <a href={this.props.link} className={S.title}>{this.props.title}</a>
                 <p className={S.descript}>{this.props.descript}</p>
             </div> 
         )

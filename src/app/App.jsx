@@ -27,35 +27,34 @@ const NavigationList = [
   }
   ];
 
-  const OverviewsItems = [
+const OverviewsItems = [
     {
-        title: "Воздушные шары",
+        title: "Анатомия за 30 секунд",
         link: "https://spb.poletynashare.ru/",
         images: require('../images/overview1.jpg'),
         descript: 'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»'
     },
     {
-        title: "Необычная фотосессия",
+        title: "Анатомия за 30 секунд",
         link: "https://www.mindo.ru/ptichki",
         images: require('../images/overview2.jpg'),
         descript: 'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»'
     },
     {
-        title: "Выставка птиц",
+        title: "Анатомия за 30 секунд",
         link: "https://www.mindo.ru/ptichki",
         images: require('../images/overview3.jpg'),
         descript: 'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»'
     },
     {
-      title: "Выставка птиц",
+      title: "Анатомия за 30 секунд",
       link: "https://www.mindo.ru/ptichki",
       images: require('../images/overview4.jpg'),
       descript: 'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»'
   }
     ];
 
- 
-  const NewsList = [
+const NewsList = [
     {
         title: 'Беседы с писателями',
         descript: 'Русские писатели говорят о важности искусства',
@@ -89,7 +88,7 @@ export class App extends React.Component {
             <div className={S.contentLeft}>
               <div className={S.news}>
                 <TopNews/>
-                <div>{NewsList.map((item) => <News {...item}/>)}</div>
+                <div className={S.newsSmall}>{NewsList.map((item) => <News {...item}/>)}</div>
               </div>
               <div className={S.overviews}>
               {OverviewsItems.map((i) => <Overviews {...i}/>)}

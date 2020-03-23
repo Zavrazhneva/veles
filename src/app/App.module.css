@@ -18,4 +18,17 @@
 }
 .news {
   display: flex;
+  align-items: stretch;
+  margin-bottom: 75px;
+}
+.newsSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 30px;
 }
