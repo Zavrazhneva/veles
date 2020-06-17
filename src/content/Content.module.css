@@ -1,0 +1,30 @@
+.contentWrapper {
+    margin: 99px 0;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.titleBlocks{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.news {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 75px;
+}
+.newsSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+}
