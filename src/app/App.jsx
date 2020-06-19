@@ -6,6 +6,8 @@ import {Content} from '../content/Content'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {SimpleSlider} from "../SimpleSlider/simpleSlider";
+import {Pagination} from '../pagination/Pagination';
+
 
 export class App extends React.Component {
 
@@ -15,6 +17,12 @@ export class App extends React.Component {
                 <h2 className={S.title}>Новости культуры</h2>
                 <Footer/>
                 <Offer/>
+                <Pagination  pagesCount={30} activePage={3} onPageChange={(i)=>{
+                  console.log(i)
+                }}/>
+                 <Pagination  pagesCount={3} activePage={3} onPageChange={(i)=>{
+                  console.log(i)
+                }}/>
                 <Content/>
                 <SimpleSlider/>
             </div>
