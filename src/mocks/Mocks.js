@@ -75,4 +75,34 @@ export const BottomEventMockData = {
     horizontal: true
 }
 
+export const SliderEvent = [
+    {
+        title: "Как все успевать",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event1.jpg'),
+    },
+    {
+        title: "Как все успевать2",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event2.jpg'),
+    },
+    {
+        title: "Как все успевать",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event1.jpg'),
+    },
+    {
+        title: "Как все успевать",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event1.jpg'),
+    },{
+        title: "Как все успевать",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event1.jpg'),
+    },{
+        title: "Как все успевать",
+        link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
+        images: require('../images/slider-event1.jpg'),
+    }
+]
 export {NewsList, NavigationList, OverviewsItems}
