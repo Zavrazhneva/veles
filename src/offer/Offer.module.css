@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: rgba(196, 196, 196, 0.3) ;
+    background-color: rgba(196, 196, 196, 0.3);
 }
 .offer {
     padding: 62px 0 48px 0;
@@ -11,7 +11,7 @@
 }
 .button {
     display: inline-block;
-    background-color: #FF7931;
+    background-color: #ff7931;
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -19,7 +19,6 @@
     padding: 5px 15px;
 }
 .slider {
-
 }
 .title {
     font-weight: 300;

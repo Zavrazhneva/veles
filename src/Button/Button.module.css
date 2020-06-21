@@ -1,5 +1,5 @@
 .button {
-    background-color: #FF7931;
+    background-color: #ff7931;
     display: inline-block;
     padding: 17px 30px;
     width: 170px;
@@ -16,7 +16,6 @@
 }
 .buttonDark {
     background-color: rgba(0, 0, 0, 0.7);
-    border:2px solid #FF7931;
+    border: 2px solid #ff7931;
     display: inline-block;
-
 }

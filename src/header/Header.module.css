@@ -1,4 +1,4 @@
-.title{
+.title {
     font-size: 35px;
     line-height: 47px;
 }
@@ -6,11 +6,11 @@
     margin: 47px 0;
 }
 
-.list{
+.list {
     display: flex;
     justify-content: space-between;
 }
-.item{
+.item {
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;

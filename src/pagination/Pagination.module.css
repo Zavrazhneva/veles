@@ -23,17 +23,16 @@
     line-height: 24px;
     opacity: 1;
     margin-top: -5px;
-    border-bottom: 2px solid #FF7931;
-
+    border-bottom: 2px solid #ff7931;
 }
 
 .arrowLeft {
     width: 30px;
     height: 30px;
-    background-image: url("../images/arrow-left.svg");
+    background-image: url('../images/arrow-left.svg');
 }
 .arrowRight {
     width: 30px;
     height: 30px;
-    background-image: url("../images/arrow-right.svg");
+    background-image: url('../images/arrow-right.svg');
 }

@@ -6,15 +6,13 @@
     justify-content: space-between;
     align-items: stretch;
 }
-.titleBlocks{
+.titleBlocks {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
-
-
 
 .contentLeft {
     max-width: 770px;

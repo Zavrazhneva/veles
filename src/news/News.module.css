@@ -3,8 +3,6 @@
     display: flex;
     font-family: 'Roboto', sans-serif;
     max-width: 269px;
-
-
 }
 .newsBlock {
     display: flex;
@@ -15,7 +13,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 .images {
     margin-right: 12px;
@@ -31,7 +28,7 @@
 .descript {
     font-size: 10px;
 }
-.topNews{
+.topNews {
     width: 470px;
     height: 334px;
     padding: 23px 21px;
@@ -48,7 +45,7 @@
     margin-bottom: 10px;
 }
 .topDescript {
-    font-family: "Roboto";
+    font-family: 'Roboto';
 
     font-size: 14px;
     line-height: 150%;

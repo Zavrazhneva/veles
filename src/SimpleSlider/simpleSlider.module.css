@@ -4,22 +4,22 @@
 }
 .sliderArrow {
     position: absolute;
-    background: #FFFFFF;
+    background: #ffffff;
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 5;
     top: 30%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .sliderPrev {
     left: -15px;
-    background-image: url("../images/slider-arrow-left.svg") ;
+    background-image: url('../images/slider-arrow-left.svg');
 }
 .sliderNext {
     right: -15px;
-    background-image: url("../images/slider-arrow-right.svg") ;
+    background-image: url('../images/slider-arrow-right.svg');
 }
 .slider {
     height: 200px;
@@ -38,8 +38,7 @@
     text-align: center;
     vertical-align: center;
     padding-top: 46px;
-    background-color: rgba(0,0,0,0.5);
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .title {
     text-transform: uppercase;
@@ -51,15 +50,13 @@
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2px;
-
 }
 
 .button {
     display: inline-block;
     padding: 6px 19px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
-
 }
 .zoomIn {
     margin-top: -13px;
