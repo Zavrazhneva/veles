@@ -8,9 +8,8 @@ export class BottomEvent extends React.Component {
         return (
             <div className={S.event} style={{backgroundImage: `url(${this.props.images})`}}>
                 <div className={S.info}>
-                    <h4 className={classNames(S.title, {[S.titleWhite]:this.props.contrast})}>{this.props.title}</h4>
+                    <h4 className={S.title}>{this.props.title}</h4>
                     <Button contrast = {this.props.contrast}/>
-
                 </div>
             </div>
         )

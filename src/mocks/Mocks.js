@@ -69,7 +69,7 @@ const NavigationList = [
 ];
 
 export const BottomEventMockData = {
-    title: "Воздушные шары", link: "https://spb.poletynashare.ru/",
+    title: "Ох, уж этот балет", link: "https://spb.poletynashare.ru/",
     images: require('../images/bottom-event.jpg'),
     contrast: true,
     horizontal: true
@@ -89,12 +89,12 @@ export const SliderEvent = [
     {
         title: "Как все успевать",
         link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
-        images: require('../images/slider-event1.jpg'),
+        images: require('../images/lasse-moller.jpg'),
     },
     {
         title: "Как все успевать",
         link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",
-        images: require('../images/slider-event1.jpg'),
+        images: require('../images/bo-zheng.jpg'),
     },{
         title: "Как все успевать",
         link: "https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/",

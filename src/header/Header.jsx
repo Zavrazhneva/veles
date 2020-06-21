@@ -1,7 +1,7 @@
 import React from 'react';
 import S from './Header.module.css'
 
-export class Footer extends React.Component {
+export class Header extends React.Component {
     constructor(props) {
         super(props);
         this.listCreation = this.listCreation.bind(this);
@@ -18,7 +18,10 @@ export class Footer extends React.Component {
     
     render(){
         return (
-            <div className={S.header}>{this.listCreation()}</div>
+            <div>
+                <h2 className={S.title}>Новости культуры</h2>
+                <div className={S.header}>{this.listCreation()}</div>
+            </div>
         )
     }
 }

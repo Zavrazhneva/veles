@@ -1,8 +1,9 @@
 import React from 'react';
 import S from './Overviews.module.css'
+import {OverviewsItems} from '../mocks/Mocks';
 
-export class Overviews extends React.Component {
 
+class Overview extends React.Component {
     render(){
         return (
             <div className={S.overview}>
@@ -13,3 +14,13 @@ export class Overviews extends React.Component {
         )
     }
 }
+export class Overviews extends React.Component {
+    render(){
+        return (
+            <div className={S.overviews}>
+                {OverviewsItems.map((i) => <Overview {...i}/>)}
+            </div>
+        )
+    }
+}
+

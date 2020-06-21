@@ -1,23 +1,35 @@
-
-
 .news {
     background-repeat: no-repeat;
     display: flex;
     font-family: 'Roboto', sans-serif;
-    text-align: left;
+    max-width: 269px;
+
+
+}
+.newsBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.newsSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 .images {
     margin-right: 12px;
 }
 .title {
+    font-family: Playfair Display;
+    font-style: normal;
     font-weight: 900;
     font-size: 14px;
     line-height: 19px;
-    text-align: left;
+    margin-bottom: 10px;
 }
 .descript {
     font-size: 10px;
-    
 }
 .topNews{
     width: 470px;
@@ -30,15 +42,16 @@
     margin-right: 29px;
 }
 .topTitle {
-    
     font-weight: 900;
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 10px;
 }
 .topDescript {
-    font-weight: normal;
+    font-family: "Roboto";
+
     font-size: 14px;
+    line-height: 150%;
 }
 .smallTitle {
     font-weight: 900;

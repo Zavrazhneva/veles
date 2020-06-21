@@ -1,14 +1,39 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 426px;
+    margin: auto;
+}
+
 .list {
     display: flex;
     justify-content: center;
 }
+
 .item {
-    
+    font-size: 14px;
+    line-height: 17px;
     margin-right: 5px;
+    color: #000000;
+    opacity: 0.4;
 }
+
 .active {
     font-size: 20px;
-    font-weight: bold;
+    line-height: 24px;
+    opacity: 1;
+    margin-top: -5px;
     border-bottom: 2px solid #FF7931;
 
+}
+
+.arrowLeft {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/arrow-left.svg");
+}
+.arrowRight {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/arrow-right.svg");
 }

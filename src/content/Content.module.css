@@ -4,6 +4,7 @@
 .content {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 .titleBlocks{
     text-align: left;
@@ -12,19 +13,17 @@
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
-.news {
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 75px;
-}
-.newsSmall {
+
+
+
+.contentLeft {
+    max-width: 770px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.overviews {
+.contentRight {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    margin-right: 30px;
 }
