@@ -1,51 +1,83 @@
-import React from 'react'
-import S from './Pagination.module.css'
-import cx from 'classnames'
+import React from 'react';
+import S from './Pagination.module.css';
+import cx from 'classnames';
 
 export class Pagination extends React.Component {
-    state = { currentPage: 1 }
+    state = { currentPage: 1 };
 
     onNumberClick = (event) => {
-        this.setState({ currentPage: +event.target.dataset.number })
-    }
-
+        this.setState({ currentPage: +event.target.dataset.number });
+    };
     onLeftArrowClick = (event) => {
         if (this.state.currentPage === 1) {
-            return
+            return;
         }
-        this.setState({ currentPage: this.state.currentPage - 1 })
-    }
+        this.setState({ currentPage: this.state.currentPage - 1 });
+    };
     onRightArrowClick = (event) => {
         if (this.state.currentPage === this.props.pagesCount) {
-            return
+            return;
         }
-        this.setState({ currentPage: this.state.currentPage + 1 })
-    }
+        this.setState({ currentPage: this.state.currentPage + 1 });
+    };
 
     render() {
-        const { pagesCount, activePage, onPageChange } = this.props
-        const { currentPage } = this.state
-        const numbers = []
-        let num = 5
-        let test = Math.min(pagesCount, num)
-        for (let i = 1; i <= test; i++) {
-            numbers.push(
-                <PaginationNumber
-                    onClick={this.onNumberClick}
-                    number={i}
-                    isActive={i === currentPage}
-                />
-            )
-        }
-        if (test >= num) {
-            numbers.push(
-                <li className={S.item}>...</li>,
-                <PaginationNumber
-                    number={pagesCount}
-                    onClick={this.onNumberClick}
-                    isActive={pagesCount === currentPage}
-                />
-            )
+        const { pagesCount } = this.props;
+        const { currentPage } = this.state;
+        const numbers = [];
+
+        if (pagesCount < 7) {
+            for (let i = 1; i <= pagesCount; i++) {
+                numbers.push(
+                    <PaginationNumber
+                        number={i}
+                        onClick={this.onNumberClick}
+                        isActive={i === currentPage}
+                    />
+                );
+            }
+        } else {
+            const showFist = currentPage > 4;
+            let startIndex = 1;
+
+            if (showFist) {
+                startIndex = currentPage - 2;
+            }
+            const finishIndex = Math.min(startIndex + 4, pagesCount);
+            console.log(finishIndex);
+            if (finishIndex === pagesCount) {
+                startIndex = pagesCount - 4;
+            }
+            if (showFist) {
+                numbers.push(
+                    <PaginationNumber
+                        number={1}
+                        onClick={this.onNumberClick}
+                        isActive={1 === currentPage}
+                    />,
+                    <li>...</li>
+                );
+            }
+            for (let i = startIndex; i <= finishIndex; i++) {
+                numbers.push(
+                    <PaginationNumber
+                        number={i}
+                        onClick={this.onNumberClick}
+                        isActive={i === currentPage}
+                    />
+                );
+            }
+            const showLast = finishIndex < pagesCount;
+            if (showLast) {
+                numbers.push(
+                    finishIndex + 1 !== pagesCount && <li>...</li>,
+                    <PaginationNumber
+                        number={pagesCount}
+                        onClick={this.onNumberClick}
+                        isActive={pagesCount === currentPage}
+                    />
+                );
+            }
         }
         return (
             <div className={S.pagination}>
@@ -56,7 +88,7 @@ export class Pagination extends React.Component {
                     onClick={this.onRightArrowClick}
                 />
             </div>
-        )
+        );
     }
 }
 
@@ -69,5 +101,5 @@ function PaginationNumber({ number, onClick, isActive }) {
         >
             {number}
         </li>
-    )
+    );
 }
