@@ -1,11 +1,10 @@
-import React from 'react'
-import S from './Event.module.css'
-import classNames from 'classnames'
-import { Button } from '../Button/button'
+import React from 'react';
+import S from './Event.module.css';
+import classNames from 'classnames';
+import { Button } from '../Button/button';
 
 export class Event extends React.Component {
     render() {
-        console.log(this.props)
         return (
             <div
                 className={classNames(S.event, {
@@ -24,6 +23,6 @@ export class Event extends React.Component {
                     <Button contrast={this.props.contrast} />
                 </div>
             </div>
-        )
+        );
     }
 }

@@ -14,7 +14,7 @@ const NewsList = [
         descript: 'Не Джойсом единым живет Ирландия!',
         images: require('../images/news-photo4.jpg'),
     },
-]
+];
 
 const OverviewsItems = [
     {
@@ -45,7 +45,7 @@ const OverviewsItems = [
         descript:
             'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»',
     },
-]
+];
 
 const NavigationList = [
     {
@@ -66,7 +66,7 @@ const NavigationList = [
         images: require('../images/bogdan-pasca.jpg'),
         contrast: true,
     },
-]
+];
 
 export const BottomEventMockData = {
     title: 'Ох, уж этот балет',
@@ -74,7 +74,7 @@ export const BottomEventMockData = {
     images: require('../images/bottom-event.jpg'),
     contrast: true,
     horizontal: true,
-}
+};
 
 export const SliderEvent = [
     {
@@ -113,5 +113,5 @@ export const SliderEvent = [
             'https://www.ef.ru/blog/language/tri-sposoba-vsjo-uspevat-i-pri-jetom-vys/',
         images: require('../images/slider-event1.jpg'),
     },
-]
-export { NewsList, NavigationList, OverviewsItems }
+];
+export { NewsList, NavigationList, OverviewsItems };

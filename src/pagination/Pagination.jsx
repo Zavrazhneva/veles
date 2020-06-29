@@ -3,27 +3,25 @@ import S from './Pagination.module.css';
 import cx from 'classnames';
 
 export class Pagination extends React.Component {
-    state = { currentPage: 1 };
-
     onNumberClick = (event) => {
-        this.setState({ currentPage: +event.target.dataset.number });
+        this.props.onPageChange(+event.target.dataset.number);
     };
+
     onLeftArrowClick = (event) => {
-        if (this.state.currentPage === 1) {
+        if (this.props.currentPage === 1) {
             return;
         }
-        this.setState({ currentPage: this.state.currentPage - 1 });
+        this.props.onPageChange(this.props.currentPage - 1);
     };
     onRightArrowClick = (event) => {
-        if (this.state.currentPage === this.props.pagesCount) {
+        if (this.props.currentPage === this.props.pagesCount) {
             return;
         }
-        this.setState({ currentPage: this.state.currentPage + 1 });
+        this.props.onPageChange(this.props.currentPage + 1);
     };
 
     render() {
-        const { pagesCount } = this.props;
-        const { currentPage } = this.state;
+        const { pagesCount, currentPage } = this.props;
         const numbers = [];
 
         if (pagesCount < 7) {
@@ -44,7 +42,6 @@ export class Pagination extends React.Component {
                 startIndex = currentPage - 2;
             }
             const finishIndex = Math.min(startIndex + 4, pagesCount);
-            console.log(finishIndex);
             if (finishIndex === pagesCount) {
                 startIndex = pagesCount - 4;
             }

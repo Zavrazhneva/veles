@@ -10,8 +10,24 @@ import {
 import { BottomEvent } from '../bottomEvent/BottomEvent';
 import { Pagination } from '../pagination/Pagination';
 import { NewsContent } from '../news/News';
+import { getOverviews } from '../mocks/serverMock';
 
 export class Content extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { currentPage: 1, data: [] };
+    }
+
+    componentDidMount() {
+        this.onPageChange(1);
+    }
+
+    onPageChange = (value) => {
+        getOverviews(value).then((data) => {
+            this.setState({ data: data, currentPage: value });
+        });
+    };
+
     render() {
         return (
             <div className={S.contentWrapper}>
@@ -19,9 +35,13 @@ export class Content extends React.Component {
                 <div className={S.content}>
                     <div className={S.contentLeft}>
                         <NewsContent />
-                        <Overviews />
+                        <Overviews overviews={this.state.data} />
 
-                        <Pagination pagesCount={20} />
+                        <Pagination
+                            pagesCount={20}
+                            currentPage={this.state.currentPage}
+                            onPageChange={this.onPageChange}
+                        />
 
                         <BottomEvent {...BottomEventMockData} />
                     </div>

@@ -1,6 +1,5 @@
-import React from 'react'
-import S from './Overviews.module.css'
-import { OverviewsItems } from '../mocks/Mocks'
+import React from 'react';
+import S from './Overviews.module.css';
 
 class Overview extends React.Component {
     render() {
@@ -12,17 +11,17 @@ class Overview extends React.Component {
                 </a>
                 <p className={S.descript}>{this.props.descript}</p>
             </div>
-        )
+        );
     }
 }
 export class Overviews extends React.Component {
     render() {
         return (
             <div className={S.overviews}>
-                {OverviewsItems.map((i) => (
+                {this.props.overviews.map((i) => (
                     <Overview {...i} />
                 ))}
             </div>
-        )
+        );
     }
 }
