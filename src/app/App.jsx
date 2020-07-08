@@ -16,14 +16,7 @@ export function App() {
 
                 <Switch>
                     <Route component={Content} path='/' exact/>
-                    <Route path="/reviews"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/music"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/theater"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/literature"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/religion"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/painting"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/movie"  render={(props)=><InnerPath  {...props}/>}  />
-                    <Route path="/architecture"  render={(props)=><InnerPath  {...props}/>}  />
+                    <Route path="/:id"  render={(props)=><InnerPath  {...props}/>}  />
                 </Switch>
             </div>
         </BrowserRouter>
