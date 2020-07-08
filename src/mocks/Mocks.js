@@ -68,6 +68,27 @@ const NavigationList = [
     },
 ];
 
+const InnerPathEvents = [
+    {
+        title: 'Title',
+        link: 'https://spb.poletynashare.ru/',
+        images: require('../images/drew-colins.jpg'),
+        contrast: false,
+    },
+    {
+        title: 'Title ',
+        link: 'https://www.mindo.ru/ptichki',
+        images: require('../images/jeremy-bishop.jpg'),
+        contrast: true,
+    },
+    {
+        title: 'Title',
+        link: 'https://www.mindo.ru/ptichki',
+        images: require('../images/bogdan-pasca.jpg'),
+        contrast: true,
+    },
+];
+
 export const BottomEventMockData = {
     title: 'Ох, уж этот балет',
     link: 'https://spb.poletynashare.ru/',
@@ -114,4 +135,4 @@ export const SliderEvent = [
         images: require('../images/slider-event1.jpg'),
     },
 ];
-export { NewsList, NavigationList, OverviewsItems };
+export { NewsList, NavigationList, OverviewsItems, InnerPathEvents };

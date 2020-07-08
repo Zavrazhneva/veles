@@ -1,5 +1,10 @@
+.title {
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+}
 .contentWrapper {
-    margin: 99px 0;
+    margin: 66px 0;
 }
 .content {
     display: flex;
