@@ -13,7 +13,6 @@ export function App() {
     return (
         <BrowserRouter>
             <div className={S.app}>
-
                 <Switch>
                     <Route component={Content} path='/' exact/>
                     <Route path="/:id"  render={(props)=><InnerPath  {...props}/>}  />

@@ -13,6 +13,7 @@ import {BottomEvent} from '../bottomEvent/BottomEvent';
 import {Pagination} from '../pagination/Pagination';
 import {NewsContent} from '../news/News';
 import {getOverviews} from '../mocks/serverMock';
+import {MobileNav} from '../mobileNav/MobileNav'
 
 export class Content extends React.Component {
     constructor(props) {
@@ -55,6 +56,7 @@ export class Content extends React.Component {
                 </div>
                 <SimpleSlider/>
                 <Header/>
+                <MobileNav/>
             </div>
         );
     }

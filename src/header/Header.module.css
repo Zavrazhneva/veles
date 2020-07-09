@@ -1,11 +1,6 @@
-.headerBlock {
-
-}
-
 .header {
     margin: 47px 0;
 }
-
 .list {
     display: flex;
     justify-content: space-between;

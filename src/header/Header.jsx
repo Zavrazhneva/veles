@@ -2,6 +2,7 @@ import React from 'react';
 import S from './Header.module.css';
 import {NavLink} from 'react-router-dom';
 import {NavigationList} from '../constants'
+
 export class Header extends React.Component {
     constructor(props) {
         super(props);
