@@ -1,7 +1,7 @@
-import React from 'react'
-import S from './Bottomevent.module.css'
-import classNames from 'classnames'
-import { Button } from '../Button/button'
+import React from 'react';
+import S from './Bottomevent.module.css';
+import classNames from 'classnames';
+import { Button } from '../Button/button';
 
 export class BottomEvent extends React.Component {
     render() {
@@ -15,6 +15,6 @@ export class BottomEvent extends React.Component {
                     <Button contrast={this.props.contrast} />
                 </div>
             </div>
-        )
+        );
     }
 }

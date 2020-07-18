@@ -1,24 +1,23 @@
 import React from 'react';
 import S from './Content.module.css';
-import {Overviews} from '../overviews/Overviews';
-import {Event} from '../event/Event';
-import {Header} from '../header/Header';
-import {SimpleSlider} from '../SimpleSlider/simpleSlider';
+import { Overviews } from '../overviews/Overviews';
+import { Event } from '../event/Event';
+import { Header } from '../header/Header';
+import { SimpleSlider } from '../SimpleSlider/simpleSlider';
 import {
     NavigationList,
     OverviewsItems,
     BottomEventMockData,
 } from '../mocks/Mocks';
-import {BottomEvent} from '../bottomEvent/BottomEvent';
-import {Pagination} from '../pagination/Pagination';
-import {NewsContent} from '../news/News';
-import {getOverviews} from '../mocks/serverMock';
-
+import { BottomEvent } from '../bottomEvent/BottomEvent';
+import { Pagination } from '../pagination/Pagination';
+import { NewsContent } from '../news/News';
+import { getOverviews } from '../mocks/serverMock';
 
 export class Content extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {currentPage: 1, data: []};
+        this.state = { currentPage: 1, data: [] };
     }
 
     componentDidMount() {
@@ -27,7 +26,7 @@ export class Content extends React.Component {
 
     onPageChange = (value) => {
         getOverviews(value).then((data) => {
-            this.setState({data: data, currentPage: value});
+            this.setState({ data: data, currentPage: value });
         });
     };
 
@@ -35,12 +34,12 @@ export class Content extends React.Component {
         return (
             <div className={S.contentWrapper}>
                 <h2 className={S.title}>Новости культуры</h2>
-                <Header/>
+                <Header />
                 <h3 className={S.titleBlocks}>Обзоры</h3>
                 <div className={S.content}>
                     <div className={S.contentLeft}>
-                        <NewsContent/>
-                        <Overviews overviews={this.state.data}/>
+                        <NewsContent />
+                        <Overviews overviews={this.state.data} />
                         <Pagination
                             pagesCount={20}
                             currentPage={this.state.currentPage}
@@ -54,7 +53,7 @@ export class Content extends React.Component {
                         ))}
                     </div>
                 </div>
-                <SimpleSlider/>
+                <SimpleSlider />
             </div>
         );
     }

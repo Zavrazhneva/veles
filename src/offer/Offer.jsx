@@ -1,5 +1,5 @@
-import React from 'react'
-import S from './Offer.module.css'
+import React from 'react';
+import S from './Offer.module.css';
 
 export class Offer extends React.Component {
     render() {
@@ -12,6 +12,6 @@ export class Offer extends React.Component {
                     <h3 className={S.title}>Подводный отель</h3>
                 </div>
             </div>
-        )
+        );
     }
 }

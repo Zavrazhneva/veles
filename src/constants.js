@@ -1,39 +1,38 @@
-
 export const NavigationList = [
     {
         title: 'Новости',
-        url: ''
+        url: '',
     },
     {
         title: 'Обзоры',
-        url: 'reviews'
+        url: 'reviews',
     },
     {
         title: 'Музыка',
-        url: 'music'
+        url: 'music',
     },
     {
         title: 'Архитектура',
-        url: 'architecture'
+        url: 'architecture',
     },
     {
         title: 'Кино',
-        url: 'movie'
+        url: 'movie',
     },
     {
         title: 'Театр',
-        url: 'theater'
+        url: 'theater',
     },
     {
         title: 'Литература',
-        url: 'literature'
+        url: 'literature',
     },
     {
         title: 'Религия',
-        url: 'religion'
+        url: 'religion',
     },
     {
         title: 'Живопись',
-        url: 'painting'
-    }
+        url: 'painting',
+    },
 ];

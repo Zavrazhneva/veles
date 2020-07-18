@@ -1,6 +1,6 @@
-import React from 'react'
-import S from './News.module.css'
-import { NewsList } from '../mocks/Mocks'
+import React from 'react';
+import S from './News.module.css';
+import { NewsList } from '../mocks/Mocks';
 
 class News extends React.Component {
     render() {
@@ -12,7 +12,7 @@ class News extends React.Component {
                     <p className={S.descript}>{this.props.descript}</p>
                 </div>
             </div>
-        )
+        );
     }
 }
 function TopNews() {
@@ -21,7 +21,7 @@ function TopNews() {
         descript:
             'В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards',
         images: require('../images/news-photo.jpg'),
-    }
+    };
     return (
         <div className={S.newsBlock}>
             <div
@@ -37,7 +37,7 @@ function TopNews() {
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export class NewsContent extends React.Component {
@@ -47,7 +47,7 @@ export class NewsContent extends React.Component {
                 <News />
                 <TopNews />
             </div>
-        )
+        );
     }
 }
-export { News, TopNews }
+export { News, TopNews };

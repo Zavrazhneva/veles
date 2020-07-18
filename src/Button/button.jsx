@@ -1,6 +1,6 @@
-import React from 'react'
-import S from './Button.module.css'
-import classNames from 'classnames'
+import React from 'react';
+import S from './Button.module.css';
+import classNames from 'classnames';
 
 export class Button extends React.Component {
     render() {
@@ -13,6 +13,6 @@ export class Button extends React.Component {
             >
                 Смотреть
             </a>
-        )
+        );
     }
 }

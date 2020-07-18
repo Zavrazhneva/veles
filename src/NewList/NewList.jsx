@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 export class NewList extends React.Component {
     render() {
         return (
-            <div >
+            <div>
                 <h1>test</h1>
             </div>
         );
