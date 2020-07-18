@@ -13,11 +13,7 @@ export class Header extends React.Component {
         this.burgerClick = this.burgerClick.bind(this);
     }
     burgerClick(){
-        if(this.state.burgerClick === false) {
-            this.setState({burgerClick: true});
-        } else {
-            this.setState({burgerClick: false});
-        }
+            this.setState({burgerClick: !this.state.burgerClick});
     }
     listCreation() {
         const listItems = NavigationList.map((number) => (
