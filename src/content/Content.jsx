@@ -4,6 +4,7 @@ import { Overviews } from '../overviews/Overviews';
 import { Event } from '../event/Event';
 import { Header } from '../header/Header';
 import { SimpleSlider } from '../SimpleSlider/simpleSlider';
+import { SliderOffer } from '../slider/Slider';
 import {
     NavigationList,
     OverviewsItems,
@@ -35,6 +36,7 @@ export class Content extends React.Component {
             <div className={S.contentWrapper}>
                 <h2 className={S.title}>Новости культуры</h2>
                 <Header />
+                <SliderOffer />
                 <h3 className={S.titleBlocks}>Обзоры</h3>
                 <div className={S.content}>
                     <div className={S.contentLeft}>
