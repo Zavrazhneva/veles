@@ -25,3 +25,8 @@
 .titleFamily {
     font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 1180px) {
+    .event {
+        margin-bottom: 50px;
+    }
+}

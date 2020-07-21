@@ -18,7 +18,7 @@
     margin-right: 12px;
 }
 .title {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -46,7 +46,6 @@
 }
 .topDescript {
     font-family: 'Roboto';
-
     font-size: 14px;
     line-height: 150%;
 }
@@ -54,4 +53,22 @@
     font-weight: 900;
     font-size: 14px;
     line-height: 19px;
+}
+.infoBlock {
+    display: flex;
+}
+@media (max-width: 768px) {
+    .newsBlock {
+        display: flex;
+        flex-direction: column;
+    }
+    .topNews {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 470px;
+    }
+    .news {
+        margin-bottom: 20px;
+    }
 }

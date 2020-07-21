@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import S from './Slider.module.css';
 import cx from 'classnames';
 import classNames from 'classnames';
+import { Button } from '../Button/button';
 
 export class SliderOffer extends React.Component {
     constructor(props) {
@@ -32,23 +33,30 @@ export class SliderOffer extends React.Component {
         };
         return (
             <div className={S.slider}>
-                <h2> Single Item</h2>
                 <div className={S.arrowsBlock}>
-                    <div className={S.arrowWrapper}>
+                    <div
+                        className={classNames(
+                            S.sliderArrow,
+                            S.lineWrapper,
+                            S.arrowWrapper
+                        )}
+                        onClick={this.onPrevPress}
+                    >
                         <div className={S.lineWrapper}>
                             <span>Предыдущая</span>
                             <span className={S.line}></span>
                         </div>
-                        <div
-                            onClick={this.onPrevPress}
-                            className={classNames(S.sliderArrow, S.sliderPrev)}
-                        />
+                        <div className={S.sliderPrev} />
                     </div>
-                    <div className={S.arrowWrapper}>
-                        <div
-                            onClick={this.onNextPress}
-                            className={classNames(S.sliderArrow, S.sliderNext)}
-                        />
+                    <div
+                        className={classNames(
+                            S.sliderArrow,
+                            S.lineWrapper,
+                            S.arrowWrapper
+                        )}
+                        onClick={this.onNextPress}
+                    >
+                        <div className={S.sliderNext} />
                         <div className={S.lineWrapper}>
                             <span className={S.line}></span>
                             <span>Следущая</span>
@@ -57,6 +65,9 @@ export class SliderOffer extends React.Component {
                 </div>
                 <Slider {...settings} ref={this.sliderRef}>
                     <div className={cx(S.slide, S.slide1)}>
+                        <a href="#" className={S.link}>
+                            Новое
+                        </a>
                         <h2 className={S.title}>Подводный отель</h2>
 
                         <p className={S.description}>
@@ -67,7 +78,11 @@ export class SliderOffer extends React.Component {
                         </p>
                     </div>
                     <div className={cx(S.slide, S.slide1)}>
-                        <h2 className={S.title}>Test</h2>
+                        <a href="#" className={S.link}>
+                            Новое
+                        </a>
+                        <h2 className={S.title}>Подводный отель</h2>
+
                         <p className={S.description}>
                             Как известно, Дубай – город контрастов. Самые
                             революционные и фантастические мечты архитекторов
@@ -76,7 +91,11 @@ export class SliderOffer extends React.Component {
                         </p>
                     </div>
                     <div className={cx(S.slide, S.slide1)}>
+                        <a href="#" className={S.link}>
+                            Новое
+                        </a>
                         <h2 className={S.title}>Подводный отель</h2>
+
                         <p className={S.description}>
                             Как известно, Дубай – город контрастов. Самые
                             революционные и фантастические мечты архитекторов

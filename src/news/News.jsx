@@ -44,7 +44,6 @@ export class NewsContent extends React.Component {
     render() {
         return (
             <div>
-                <News />
                 <TopNews />
             </div>
         );

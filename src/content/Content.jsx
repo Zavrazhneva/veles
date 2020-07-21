@@ -37,10 +37,11 @@ export class Content extends React.Component {
                 <h2 className={S.title}>Новости культуры</h2>
                 <Header />
                 <SliderOffer />
-                <h3 className={S.titleBlocks}>Обзоры</h3>
                 <div className={S.content}>
                     <div className={S.contentLeft}>
+                        <h3 className={S.titleBlocks}>Новости</h3>
                         <NewsContent />
+                        <h3 className={S.titleBlocks}>Обзоры</h3>
                         <Overviews overviews={this.state.data} />
                         <Pagination
                             pagesCount={20}

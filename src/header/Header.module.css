@@ -21,6 +21,7 @@
     flex-flow: column nowrap;
     background-color: #ff7931;
     padding: 5px;
+    z-index: 100;
 }
 .div {
     width: 2rem;
@@ -39,9 +40,7 @@
 @media (max-width: 768px) {
     .burger {
         display: flex;
-
     }
-
     .list {
         display: none;
         flex-direction: column;
@@ -58,6 +57,9 @@
         background-image: url('../images/arrow-mobileNav.svg');
         background-repeat: no-repeat;
         background-position: right;
+    }
+    .header {
+        margin: 0;
     }
 }
 
