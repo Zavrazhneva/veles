@@ -37,7 +37,10 @@ export class Header extends React.Component {
         return (
             <div className={S.headerBlock}>
                 <div className={S.header}>{this.listCreation()}</div>
-                <Burger onBurgerClick={this.burgerClick} />
+                <Burger
+                    burgerClick={this.state.burgerClick}
+                    onBurgerClick={this.burgerClick}
+                />
             </div>
         );
     }

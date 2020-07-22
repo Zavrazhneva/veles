@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import S from './Slider.module.css';
 import cx from 'classnames';
 import classNames from 'classnames';
-import { Button } from '../Button/button';
 
 export class SliderOffer extends React.Component {
     constructor(props) {
@@ -30,6 +29,32 @@ export class SliderOffer extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+
+            appendDots: (dots) => (
+                <div
+                    style={{
+                        borderRadius: '10px',
+                        position: 'absolute',
+                        bottom: '10px',
+                    }}
+                >
+                    <ul style={{ margin: '0px' }}> {dots} </ul>
+                </div>
+            ),
+            customPaging: (i, j) => {
+                console.log(i, j, this.sliderRef.current);
+                return (
+                    <div
+                        style={{
+                            width: '30px',
+                        }}
+                    >
+                        <div className={S.sliderDots}>
+                            <div className={S.sliderDot}></div>
+                        </div>
+                    </div>
+                );
+            },
         };
         return (
             <div className={S.slider}>
