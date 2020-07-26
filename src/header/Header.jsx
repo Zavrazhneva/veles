@@ -14,11 +14,15 @@ export class Header extends React.Component {
     }
     burgerClick() {
         this.setState({ burgerClick: !this.state.burgerClick });
+        document.body.classList.add(S.noScroll);
+        if (this.state.burgerClick === true) {
+            document.body.classList.remove(S.noScroll);
+        }
     }
     listCreation() {
-        const listItems = NavigationList.map((number) => (
-            <li className={S.item}>
-                <NavLink to={`/${number.url}`}>{number.title}</NavLink>
+        const listItems = NavigationList.map((item) => (
+            <li className={S.item} key={item.title}>
+                <NavLink to={`/${item.url}`}>{item.title}</NavLink>
             </li>
         ));
 
@@ -35,7 +39,7 @@ export class Header extends React.Component {
 
     render() {
         return (
-            <div className={S.headerBlock}>
+            <div>
                 <div className={S.header}>{this.listCreation()}</div>
                 <Burger
                     burgerClick={this.state.burgerClick}

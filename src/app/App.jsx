@@ -1,6 +1,7 @@
 import React from 'react';
 import S from './App.module.css';
 import { Content } from '../content/Content';
+
 import { InnerPath } from '../ innerPages/InnerPath';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,5 +25,3 @@ export function App() {
 }
 
 //придумать блоки для innerPage и для слайдеров
-
-//точки(отображение для активной полупрозрачное)

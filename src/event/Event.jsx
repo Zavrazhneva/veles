@@ -20,7 +20,10 @@ export class Event extends React.Component {
                     >
                         {this.props.title}
                     </h4>
-                    <Button contrast={this.props.contrast} />
+                    <Button
+                        link={this.props.link}
+                        contrast={this.props.contrast}
+                    />
                 </div>
             </div>
         );

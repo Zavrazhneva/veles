@@ -108,14 +108,15 @@ span {
 
 .sliderDots {
     padding: 5px;
-
 }
 .sliderDot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #FFFFFF;
+    opacity: 0.3;
 }
+
 @media (max-width: 768px) {
     .link {
         margin-bottom: 24px;
@@ -132,6 +133,8 @@ span {
     .description {
         margin-bottom: 65px;
     }
-
 }
 
+.sliderDotActive {
+    opacity: 1;
+}

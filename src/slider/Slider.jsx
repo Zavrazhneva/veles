@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { createRef } from 'react';
 import Slider from 'react-slick';
 import S from './Slider.module.css';
 import cx from 'classnames';
@@ -9,6 +9,8 @@ export class SliderOffer extends React.Component {
         super(props);
         this.onPrevPress = this.onPrevPress.bind(this);
         this.onNextPress = this.onNextPress.bind(this);
+        this.clickDots = this.clickDots.bind(this);
+        this.state = { onChangeDots: 0 };
     }
 
     sliderRef = createRef();
@@ -21,6 +23,10 @@ export class SliderOffer extends React.Component {
         this.sliderRef.current.slickNext();
     }
 
+    clickDots(oldIndex, index) {
+        this.setState({ onChangeDots: index });
+    }
+
     render() {
         const settings = {
             dots: true,
@@ -29,7 +35,7 @@ export class SliderOffer extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-
+            beforeChange: this.clickDots,
             appendDots: (dots) => (
                 <div
                     style={{
@@ -41,21 +47,20 @@ export class SliderOffer extends React.Component {
                     <ul style={{ margin: '0px' }}> {dots} </ul>
                 </div>
             ),
-            customPaging: (i, j) => {
-                console.log(i, j, this.sliderRef.current);
+            customPaging: (i) => {
                 return (
-                    <div
-                        style={{
-                            width: '30px',
-                        }}
-                    >
-                        <div className={S.sliderDots}>
-                            <div className={S.sliderDot}></div>
-                        </div>
+                    <div className={S.sliderDots}>
+                        <div
+                            className={cx(S.sliderDot, {
+                                [S.sliderDotActive]:
+                                    this.state.onChangeDots === i,
+                            })}
+                        />
                     </div>
                 );
             },
         };
+
         return (
             <div className={S.slider}>
                 <div className={S.arrowsBlock}>

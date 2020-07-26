@@ -5,11 +5,7 @@ import { Event } from '../event/Event';
 import { Header } from '../header/Header';
 import { SimpleSlider } from '../SimpleSlider/simpleSlider';
 import { SliderOffer } from '../slider/Slider';
-import {
-    NavigationList,
-    OverviewsItems,
-    BottomEventMockData,
-} from '../mocks/Mocks';
+import { NavigationList, BottomEventMockData } from '../mocks/Mocks';
 import { BottomEvent } from '../bottomEvent/BottomEvent';
 import { Pagination } from '../pagination/Pagination';
 import { NewsContent } from '../news/News';
@@ -37,26 +33,41 @@ export class Content extends React.Component {
                 <h2 className={S.title}>Новости культуры</h2>
                 <Header />
                 <SliderOffer />
-                <div className={S.content}>
-                    <div className={S.contentLeft}>
-                        <h3 className={S.titleBlocks}>Новости</h3>
-                        <NewsContent />
-                        <h3 className={S.titleBlocks}>Обзоры</h3>
-                        <Overviews overviews={this.state.data} />
-                        <Pagination
-                            pagesCount={20}
-                            currentPage={this.state.currentPage}
-                            onPageChange={this.onPageChange}
-                        />
-                        <BottomEvent {...BottomEventMockData} />
-                    </div>
-                    <div className={S.contentRight}>
-                        {NavigationList.map((number) => (
-                            <Event {...number} />
-                        ))}
+
+                <div>
+                    <div className={S.content}>
+                        <div className={S.contentLeft}>
+                            <h3 className={S.titleBlocks}>Новости</h3>
+                            <NewsContent />
+                            <h3 className={S.titleBlocks}>Обзоры</h3>
+                            <Overviews overviews={this.state.data} />
+                            <Pagination
+                                pagesCount={20}
+                                currentPage={this.state.currentPage}
+                                onPageChange={this.onPageChange}
+                            />
+                            <BottomEvent {...BottomEventMockData} />
+                        </div>
+                        <div className={S.contentRight}>
+                            {NavigationList.map((item) => (
+                                <Event key={item.title} {...item} />
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <SimpleSlider />
+
+                <div className={S.footer}>
+                    <h2 className={S.title}>Новости культуры</h2>
+
+                    <Header />
+                    <div className={S.footnote}>
+                        <hr className={S.footerLine} />
+                        <span className={S.footnoteText}>
+                            © 2020 Zavrazhneva Anastasiia
+                        </span>
+                    </div>
+                </div>
             </div>
         );
     }

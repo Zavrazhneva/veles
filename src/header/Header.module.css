@@ -1,5 +1,6 @@
 .header {
-    margin: 47px 0;
+    margin: 47px auto;
+    max-width: 1174px;
 }
 .list {
     display: flex;
@@ -9,18 +10,19 @@
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;
+    box-sizing: border-box;
+
 }
 .burger {
     display: none;
-    width: 2rem;
-    height: 2rem;
+    width: 50px;
+    height: 50px;
     position: fixed;
-    top: 46px;
-    right: 20px;
+    top: 0;
+    left: 0;
     justify-content: space-around;
     flex-flow: column nowrap;
     background-color: #ff7931;
-    padding: 5px;
     z-index: 100;
     background-image: url("../images/burger.svg");
     background-size: contain;
@@ -37,6 +39,9 @@
     .item {
         margin-bottom: 10px;
     }
+    .header {
+        padding: 0 20px;
+    }
 }
 @media (max-width: 768px) {
     .burger {
@@ -48,7 +53,10 @@
         padding: 76px 0;
         position: relative;
         margin: 0;
-        margin-top: -76px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
     .item {
         font-size: 15px;
@@ -60,6 +68,7 @@
         background-image: url('../images/arrow-mobileNav.svg');
         background-repeat: no-repeat;
         background-position: right;
+        width: 100%;
     }
     .header {
         margin: 0;
@@ -76,6 +85,14 @@
 }
 .burgerClose {
     background-image: url("../images/icon-close.svg");
-    background-size: cover;
+    background-position: center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
     background-color: white;
+    left: inherit;
+    right: 16px;
+}
+.noScroll {
+    overflow: hidden;
+    margin-right: 13px;
 }

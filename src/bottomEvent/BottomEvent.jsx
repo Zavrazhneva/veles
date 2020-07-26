@@ -1,6 +1,5 @@
 import React from 'react';
 import S from './Bottomevent.module.css';
-import classNames from 'classnames';
 import { Button } from '../Button/button';
 
 export class BottomEvent extends React.Component {

@@ -1,7 +1,11 @@
+* {
+    outline: none;
+}
+
 body {
     margin: auto auto;
     font-family: 'Roboto', sans-serif;
-    max-width: 1174px;
+
 }
 h2,
 h3,

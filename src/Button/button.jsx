@@ -1,15 +1,14 @@
 import React from 'react';
 import S from './Button.module.css';
-import classNames from 'classnames';
 
 export class Button extends React.Component {
     render() {
         return (
             <a
-                className={classNames(S.button, {
-                    [S.buttonDark]: this.props.contrast,
-                })}
+                className={S.button}
                 href={this.props.link}
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 Смотреть
             </a>

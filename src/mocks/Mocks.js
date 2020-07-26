@@ -3,16 +3,19 @@ const NewsList = [
         title: 'Беседы с писателями',
         descript: 'Русские писатели говорят о важности искусства',
         images: require('../images/news-photo2.jpg'),
+        link: 'https://www.gazeta.ru/culture/',
     },
     {
         title: 'День и ночь св. Патрика: встреча старых друзей',
         descript: 'Не Джойсом единым живет Ирландия!',
         images: require('../images/news-photo3.jpg'),
+        link: 'https://www.gazeta.ru/culture/',
     },
     {
         title: 'День и ночь св. Патрика: встреча старых друзей',
         descript: 'Не Джойсом единым живет Ирландия!',
         images: require('../images/news-photo4.jpg'),
+        link: 'https://www.gazeta.ru/culture/',
     },
 ];
 
@@ -56,13 +59,15 @@ const NavigationList = [
     },
     {
         title: 'Необычная фотосессия',
-        link: 'https://www.mindo.ru/ptichki',
+        link:
+            'https://kudago.com/spb/list/mesta-dlya-neobychnyh-fotosessij-v-spb/',
         images: require('../images/jeremy-bishop.jpg'),
         contrast: true,
     },
     {
         title: 'Выставка птиц',
-        link: 'https://www.mindo.ru/ptichki',
+        link:
+            'https://kudago.com/spb/event/postoyannaya-vystavka-pticy-v-etazhah/',
         images: require('../images/bogdan-pasca.jpg'),
         contrast: true,
     },
@@ -76,13 +81,13 @@ const InnerPathEvents = [
         contrast: false,
     },
     {
-        title: 'Title ',
+        title: 'Title2 ',
         link: 'https://www.mindo.ru/ptichki',
         images: require('../images/jeremy-bishop.jpg'),
         contrast: true,
     },
     {
-        title: 'Title',
+        title: 'Title3',
         link: 'https://www.mindo.ru/ptichki',
         images: require('../images/bogdan-pasca.jpg'),
         contrast: true,

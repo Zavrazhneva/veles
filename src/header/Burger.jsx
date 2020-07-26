@@ -13,15 +13,13 @@ export class Burger extends React.Component {
     }
 
     render() {
-        console.log(this.props.onBurgerClick);
         return (
             <div
-                className={S.burger}
                 className={cx(S.burger, {
                     [S.burgerClose]: this.props.burgerClick,
                 })}
                 onClick={this.burgerOnChange}
-            ></div>
+            />
         );
     }
 }

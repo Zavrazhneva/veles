@@ -1,14 +1,23 @@
 .innerPath {
     margin: 60px 0;
+    padding: 0 16px;
 }
 .events {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
 }
 .title {
     font-size: 35px;
     line-height: 47px;
     text-align: center;
     font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 850px)  {
+    .events {
+        flex-direction: column;
+    }
 }

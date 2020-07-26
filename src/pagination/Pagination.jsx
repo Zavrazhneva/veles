@@ -31,6 +31,7 @@ export class Pagination extends React.Component {
                         number={i}
                         onClick={this.onNumberClick}
                         isActive={i === currentPage}
+                        key={i}
                     />
                 );
             }
@@ -51,8 +52,9 @@ export class Pagination extends React.Component {
                         number={1}
                         onClick={this.onNumberClick}
                         isActive={1 === currentPage}
+                        key={1}
                     />,
-                    <li>...</li>
+                    <li key={'before-dots'}>...</li>
                 );
             }
             for (let i = startIndex; i <= finishIndex; i++) {
@@ -61,27 +63,34 @@ export class Pagination extends React.Component {
                         number={i}
                         onClick={this.onNumberClick}
                         isActive={i === currentPage}
+                        key={i}
                     />
                 );
             }
             const showLast = finishIndex < pagesCount;
             if (showLast) {
                 numbers.push(
-                    finishIndex + 1 !== pagesCount && <li>...</li>,
+                    finishIndex + 1 !== pagesCount && (
+                        <li key={'after-dots'}>...</li>
+                    ),
                     <PaginationNumber
                         number={pagesCount}
                         onClick={this.onNumberClick}
                         isActive={pagesCount === currentPage}
+                        key={pagesCount}
                     />
                 );
             }
         }
         return (
             <div className={S.pagination}>
-                <div className={S.arrowLeft} onClick={this.onLeftArrowClick} />
+                <div
+                    className={cx(S.arrowLeft, S.arrow)}
+                    onClick={this.onLeftArrowClick}
+                />
                 <ul className={S.list}>{numbers}</ul>
                 <div
-                    className={S.arrowRight}
+                    className={cx(S.arrowRight, S.arrow)}
                     onClick={this.onRightArrowClick}
                 />
             </div>

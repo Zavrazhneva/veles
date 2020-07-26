@@ -4,6 +4,7 @@
     height: 479px;
     padding: 40px;
     box-sizing: border-box;
+    background-position: center;
 }
 
 .images {
@@ -36,8 +37,22 @@
     align-items: center;
     text-transform: uppercase;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1210px) {
     .event {
         margin-bottom: 50px;
+        width: 32%;
+    }
+}
+@media (max-width: 850px) {
+    .event {
+        width: 100%;
+        max-width: 370px;
+        height: 310px;
+        margin:0 auto 50px auto;
+    }
+    .title {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 2px;
     }
 }

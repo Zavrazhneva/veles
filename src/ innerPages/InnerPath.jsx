@@ -15,8 +15,8 @@ export function InnerPath(props) {
             <h2 className={S.title}>{currentPage.title}</h2>
             <Header />
             <div className={S.events}>
-                {InnerPathEvents.map((number) => (
-                    <Event {...number} />
+                {InnerPathEvents.map((item) => (
+                    <Event {...item} key={item.title} />
                 ))}
             </div>
         </div>

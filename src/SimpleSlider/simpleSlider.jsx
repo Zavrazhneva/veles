@@ -21,7 +21,7 @@ export class SimpleSlider extends React.Component {
     }
     render() {
         let settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 4,
@@ -30,16 +30,15 @@ export class SimpleSlider extends React.Component {
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        dots: true,
                     },
                 },
                 {
-                    breakpoint: 890,
+                    breakpoint: 870,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
@@ -49,6 +48,7 @@ export class SimpleSlider extends React.Component {
                 {
                     breakpoint: 620,
                     settings: {
+                        dots: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     },
@@ -63,8 +63,8 @@ export class SimpleSlider extends React.Component {
                 />
 
                 <Slider {...settings} ref={this.sliderRef}>
-                    {SliderEvent.map((sliderEvent) => (
-                        <Slide {...sliderEvent} />
+                    {SliderEvent.map((sliderEvent, i) => (
+                        <Slide {...sliderEvent} key={sliderEvent.title + i} />
                     ))}
                 </Slider>
                 <div
