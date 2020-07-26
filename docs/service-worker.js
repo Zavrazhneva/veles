@@ -6,21 +6,21 @@
  * See https://goo.gl/nhQhGp
  *
  * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
+ * directly; instead, make changes to your Workbox docs configuration
+ * and re-run your docs process.
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 importScripts(
-  "/precache-manifest.6d86a4617c160408a1435580ba4a5fb3.js"
+    'https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js'
 );
 
+importScripts('/precache-manifest.6d86a4617c160408a1435580ba4a5fb3.js');
+
 self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
 });
 
 workbox.core.clientsClaim();
@@ -33,7 +33,9 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
-});
+workbox.routing.registerNavigationRoute(
+    workbox.precaching.getCacheKeyForURL('/index.html'),
+    {
+        blacklist: [/^\/_/, /\/[^/?]+\.[^/]+$/],
+    }
+);
