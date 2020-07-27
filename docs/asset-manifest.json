@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/veles/static/css/main.08883bef.chunk.css",
-    "main.js": "/veles/static/js/main.81feea19.chunk.js",
-    "main.js.map": "/veles/static/js/main.81feea19.chunk.js.map",
+    "main.js": "/veles/static/js/main.cd4cd592.chunk.js",
+    "main.js.map": "/veles/static/js/main.cd4cd592.chunk.js.map",
     "runtime-main.js": "/veles/static/js/runtime-main.05e2ce09.js",
     "runtime-main.js.map": "/veles/static/js/runtime-main.05e2ce09.js.map",
     "static/css/2.05469d10.chunk.css": "/veles/static/css/2.05469d10.chunk.css",
     "static/js/2.ce30933c.chunk.js": "/veles/static/js/2.ce30933c.chunk.js",
     "static/js/2.ce30933c.chunk.js.map": "/veles/static/js/2.ce30933c.chunk.js.map",
     "index.html": "/veles/index.html",
-    "precache-manifest.1550483a0f8d552ea442c583f10981ef.js": "/veles/precache-manifest.1550483a0f8d552ea442c583f10981ef.js",
+    "precache-manifest.b7444594cfdf9cd658f7d18951ac4f88.js": "/veles/precache-manifest.b7444594cfdf9cd658f7d18951ac4f88.js",
     "service-worker.js": "/veles/service-worker.js",
     "static/css/2.05469d10.chunk.css.map": "/veles/static/css/2.05469d10.chunk.css.map",
     "static/css/main.08883bef.chunk.css.map": "/veles/static/css/main.08883bef.chunk.css.map",
@@ -43,6 +43,6 @@
     "static/css/2.05469d10.chunk.css",
     "static/js/2.ce30933c.chunk.js",
     "static/css/main.08883bef.chunk.css",
-    "static/js/main.81feea19.chunk.js"
+    "static/js/main.cd4cd592.chunk.js"
   ]
 }

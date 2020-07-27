@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a85389aa6dd7cd893002a5e124637971",
+    "revision": "87c80a9f17884f69dff570dccbd5e315",
     "url": "/veles/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/veles/static/css/2.05469d10.chunk.css"
   },
   {
-    "revision": "32fc74b9a502810188be",
+    "revision": "10240bb6c3b29c5b533d",
     "url": "/veles/static/css/main.08883bef.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/veles/static/js/2.ce30933c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "32fc74b9a502810188be",
-    "url": "/veles/static/js/main.81feea19.chunk.js"
+    "revision": "10240bb6c3b29c5b533d",
+    "url": "/veles/static/js/main.cd4cd592.chunk.js"
   },
   {
     "revision": "bc6d76c5c0ac1dc1a919",
