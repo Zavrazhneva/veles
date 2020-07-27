@@ -19,7 +19,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "PUBLIC_URL=/veles react-scripts build && rm -rf docs && mv build docs",
+        "build": "PUBLIC_URL=/veles react-scripts build && rm -rf docs && mv build docs && git add -A",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
